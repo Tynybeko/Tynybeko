@@ -1,0 +1,26 @@
+@media screen and (max-width: 800px) {
+    main .main__top {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .main__top__lang {
+        transform: rotate(0);
+    }
+
+    main .main__top {
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    header .header__link {
+        justify-content: center;
+    }
+
+    main .main__top__username {
+        font-size: 30px;
+    }
+}
