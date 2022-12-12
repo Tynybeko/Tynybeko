@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: url(./31189.webp) no-repeat fixed;
+  background-size: cover; }
 
 .container {
   width: 85%;
@@ -11,7 +13,10 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #82828292; }
   header .header {
     display: flex;
     justify-content: center;
@@ -28,17 +33,19 @@ header {
         font-family: 'Gilroy-Bold';
         font-size: 18px;
         line-height: 22px;
-        color: #828282;
+        color: #040404;
         text-decoration: none; }
       header .header__link .active {
         font-family: 'Gilroy-Bold';
         font-size: 18px;
         line-height: 22px;
-        color: #070707; }
+        color: #070707;
+        border-bottom: grey; }
 
 main {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 70px 0 0 0; }
   main .main {
     display: flex;
     flex-direction: column;
@@ -64,6 +71,12 @@ main {
         max-width: 170px; }
       main .main__top__lang {
         transform: rotate(-90deg); }
+        main .main__top__lang .active {
+          color: #070707;
+          text-decoration: underline; }
+        main .main__top__lang a {
+          text-decoration: none;
+          color: #060000; }
     main .main__bottom {
       display: flex;
       justify-content: center; }
@@ -74,7 +87,7 @@ main {
 .aboutme {
   display: flex;
   justify-content: center;
-  background: #F6F6F6;
+  background: #f6f6f63b;
   padding: 60px 0; }
   .aboutme__inner {
     display: flex;
@@ -138,7 +151,7 @@ main {
 .portfolio {
   display: flex;
   justify-content: center;
-  background: #F6F6F6; }
+  background: #f6f6f64e; }
   .portfolio__inner {
     display: flex;
     flex-direction: column;
@@ -191,9 +204,16 @@ main {
       font-size: 18px;
       line-height: 22px;
       text-align: center;
-      color: #FFFFFF; }
-    .contacts__inner__link img {
-      width: 100%; }
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .contacts__inner__link__btn {
+      border: none;
+      background-color: inherit; }
+      .contacts__inner__link__btn img {
+        width: 40px;
+        height: 40px; }
     .contacts__inner__footer {
       font-family: 'Gilroy-Medium';
       font-size: 14px;
@@ -201,3 +221,12 @@ main {
       text-align: center;
       color: #828282;
       max-width: 200px; }
+
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+.filter {
+  background-color: #fdf8f869; }
