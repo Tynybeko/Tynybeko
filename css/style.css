@@ -35,6 +35,9 @@ header {
         line-height: 22px;
         color: #040404;
         text-decoration: none; }
+      header .header__link .active_link {
+        border-bottom: #4b4747 solid 1px;
+        color: #4b4747; }
       header .header__link .active {
         font-family: 'Gilroy-Bold';
         font-size: 18px;
