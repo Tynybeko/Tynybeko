@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+}
+
+.rectangle__main {
+    position: absolute;
+    z-index: -1000;
+    margin-top: -24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1370px;
+    align-items: center;
+    gap: 477px;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.left__header {
+    display: flex;
+    gap: 101px;
+    align-items: center;
+}
+
+.link__menu {
+    display: flex;
+    gap: 40px;
+
+}
+
+.link__main {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1A0A03;
+    opacity: 0.7;
+}
+
+button {
+    cursor: pointer;
+}
+
+.buy__now {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    background: #EE5514;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.active {
+    color: #EE5514;
+    ;
+}
+
+.svg {
+    position: absolute;
+}
+
+.main__left__title {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 61px;
+    line-height: 120%;
+    max-width: 366px;
+}
+
+.main__left__title span {
+    color: #EE5514;
+}
+
+.main__left__desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    max-width: 326px;
+}
+
+.main__left {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next__swipe {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #ee551452;
+    font-size: xx-large;
+    font-weight: 900;
+    border: none;
+}
+
+.slide__main__inner {
+    display: flex;
+    align-items: center;
+}
+
+.right__main__inner {
+    right: 260px;
+    z-index: -100;
+}
+
+.main__bottom {
+    display: flex;
+    max-width: 683px;
+    gap: 40px;
+}
+
+.main__btm__filter {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.7;
+}
+
+.main__btm__select select {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    border: none;
+    background-color: inherit;
+    max-width: 70px;
+    margin-left: -4px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.video__container {
+    display: flex;
+    max-width: 1140px;
+    gap: 140px;
+    padding-top: 249px;
+    align-items: center;
+}
+
+.left__video__cont {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.video__main__name {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #EE5514;
+}
+
+.video__main__title {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 130%;
+    color: #1A0A03;
+    max-width: 340px;
+}
+
+.video__main__desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1A0A03;
+    opacity: 0.7;
+    max-width: 326px;
+}
+
+
+.back__video {
+    z-index: -1000;
+    margin: -14px -20px 54px 50px;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+}
+
+.feature__inner {
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    padding-top: 140px;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.feature__main__title {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #EE5514;
+}
+
+.feature__name {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.feature__menu__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.feature__main__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 423px;
+    gap: 20px;
+    box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.05);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.name__block {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.desc__block {
+    max-width: 239px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+}
+
+.more__block__btn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    border: none;
+    background-color: inherit;
+}
+
+.more__block span {
+    color: #EE5514;
+}
+
+.selected__block {
+    background: #ee55142b;
+}
+
+.swiper {
+    width: 550px;
+    height: 100vh;
+}
+
+.swiper img {
+    width: 500px;
+}
+
+#wrap {
+    position: relative;
+}
+
+.section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section:last-child {
+    border-bottom: 0;
+}
+
+.section--d {
+    background: #000;
+}
+
+.center {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+
+#video {
+    width: 100%;
+    position: relative;
+}
+
+#video-over {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+#video-play {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #fff;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s ease;
+    transition-property: opacity, visibility;
+}
+
+#video-play::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 21px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    border-left-color: #fff;
+    border-right-width: 0;
+    transition: transform 0.2s ease;
+}
+
+#video-play:hover::before {
+    transform: scale(1.2);
+}
+
+#video video {
+    width: 100%;
+    display: block;
+}
+
+#video.video-is-playing #video-over {
+    display: block;
+}
+
+#video.video-is-playing #video-play {
+    opacity: 0;
+    visibility: hidden;
+}
