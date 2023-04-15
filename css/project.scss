@@ -1,7 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    font-family: 'Nunito', cursive;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: url(./31189.webp) no-repeat fixed;
+    background: url('./polygons-geometric-blur-background-connected-dots-3840x2400-1740.jpg') no-repeat fixed;
     background-size: cover;
 }
 
@@ -25,7 +31,6 @@ header {
         justify-content: center;
         width: 100%;
         border-bottom: 1px solid #828282;
-        padding: 30px 0;
 
         &__link {
             display: flex;
@@ -33,20 +38,33 @@ header {
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 10px;
+            padding: 20px 0;
 
             &__item {
                 font-family: 'Gilroy-Bold';
                 font-size: 18px;
                 line-height: 22px;
                 color: #040404;
+                padding: 10px;
                 text-decoration: none;
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
 
+                svg {
+                    margin-right: 10px;
+                }
 
             }
 
+            &__item:hover {
+                color: white;
+                background-color: #2F4F4F;
+            }
+
             .active_link {
-                border-bottom: rgb(75, 71, 71) solid 1px;
-                color: rgb(75, 71, 71);
+                color: white;
+                background-color: #2F4F4F;
             }
 
             .active {
@@ -195,8 +213,9 @@ main {
                     font-family: 'Gilroy-Bold';
                     font-size: 14px;
                     line-height: 17px;
+                    font-weight: 500;
                     text-align: center;
-                    color: #828282;
+                    color: black;
                 }
 
                 img {
@@ -213,14 +232,27 @@ main {
     justify-content: center;
     background: #f6f6f64e;
 
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-family: 'Gilroy-Bold';
+            font-weight: 400;
+            font-size: 30px;
+        }
+    }
 
     &__inner {
         display: flex;
-        flex-direction: column;
         gap: 40px;
         align-items: center;
         width: 100%;
         padding: 30px 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
         &__block {
             display: flex;
@@ -229,7 +261,8 @@ main {
             align-items: center;
 
             &__img {
-                width: 100%;
+                width: 500px;
+                border-radius: 20px;
             }
 
             &__link {

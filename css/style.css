@@ -1,7 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  font-family: 'Nunito', cursive; }
+
 body {
   margin: 0;
   padding: 0;
-  background: url(./31189.webp) no-repeat fixed;
+  background: url("./polygons-geometric-blur-background-connected-dots-3840x2400-1740.jpg") no-repeat fixed;
   background-size: cover; }
 
 .container {
@@ -21,23 +25,32 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    border-bottom: 1px solid #828282;
-    padding: 30px 0; }
+    border-bottom: 1px solid #828282; }
     header .header__link {
       display: flex;
       width: 100%;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 10px; }
+      gap: 10px;
+      padding: 20px 0; }
       header .header__link__item {
         font-family: 'Gilroy-Bold';
         font-size: 18px;
         line-height: 22px;
         color: #040404;
-        text-decoration: none; }
+        padding: 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        border-radius: 20px; }
+        header .header__link__item svg {
+          margin-right: 10px; }
+      header .header__link__item:hover {
+        color: white;
+        background-color: #2F4F4F; }
       header .header__link .active_link {
-        border-bottom: #4b4747 solid 1px;
-        color: #4b4747; }
+        color: white;
+        background-color: #2F4F4F; }
       header .header__link .active {
         font-family: 'Gilroy-Bold';
         font-size: 18px;
@@ -145,8 +158,9 @@ main {
           font-family: 'Gilroy-Bold';
           font-size: 14px;
           line-height: 17px;
+          font-weight: 500;
           text-align: center;
-          color: #828282; }
+          color: black; }
         .skills__inner__block__items img {
           max-width: 100px;
           height: 100px; }
@@ -155,20 +169,31 @@ main {
   display: flex;
   justify-content: center;
   background: #f6f6f64e; }
+  .portfolio .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .portfolio .container h2 {
+      font-family: 'Gilroy-Bold';
+      font-weight: 400;
+      font-size: 30px; }
   .portfolio__inner {
     display: flex;
-    flex-direction: column;
     gap: 40px;
     align-items: center;
     width: 100%;
-    padding: 30px 0; }
+    padding: 30px 0;
+    flex-wrap: wrap;
+    justify-content: space-around; }
     .portfolio__inner__block {
       display: flex;
       flex-direction: column;
       gap: 30px;
       align-items: center; }
       .portfolio__inner__block__img {
-        width: 100%; }
+        width: 500px;
+        border-radius: 20px; }
       .portfolio__inner__block__link {
         font-family: 'Gilroy-Medium';
         font-size: 18px;
