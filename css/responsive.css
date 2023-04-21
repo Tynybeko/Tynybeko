@@ -1,8 +1,12 @@
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     main .main__top {
         align-items: center;
         flex-direction: column;
         text-align: center;
+    }
+
+    .container {
+        width: 95%;
     }
 
     main .main__top__lang {
@@ -14,13 +18,190 @@
     }
 }
 
+@media (max-width: 700px) {
+    main .main__top__username {
+        font-size: 35.3392px;
+        line-height: 40px;
+    }
 
-@media screen and (max-width: 350px) {
+    header .header__link__item:hover {
+        /* display: none; */
+        background-color: inherit;
+    }
+
+    header .header__link__item {
+        display: none;
+    }
+
+    header .header__link .active_link {
+        display: flex;
+        justify-content: center;
+        background-color: inherit;
+        color: white;
+        padding: 0 0;
+        margin: 0 10px;
+
+    }
+
+
+    header .header__link {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    header {
+        max-width: 150px;
+        border-radius: 0 20px 20px 0;
+    }
+
+    main {
+        padding: 30px 0;
+    }
+
+    .skills__inner__block {
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    header .container {
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 350px) {
     header .header__link {
         justify-content: center;
     }
 
     main .main__top__username {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .portfolio__inner__block img {
+        width: 400px;
+    }
+
+
+
+    @media (max-width: 450px) {
+        main .main__bottom img {
+            max-width: 400px;
+        }
+
+        main .main__top__username {
+            font-size: 28.3392px;
+            line-height: 30px;
+        }
+
+        main .main__top {
+            gap: 10px;
+        }
+
+        main .main__top__desc {
+            font-size: 13px;
+        }
+
+        main .main__top__lang {
+            padding: 2px 6px;
+        }
+
+        main .main__top__lang a {
+            width: 15px;
+            height: 15px;
+            font-size: 8px;
+        }
+
+        main .main {
+            gap: 30px;
+            justify-content: space-between;
+            padding: 17px 0;
+        }
+
+        .aboutme {
+            padding: 20px 0;
+        }
+
+        .aboutme__inner__title {
+            font-size: 21px;
+            line-height: 20px;
+        }
+        .aboutme__inner__text {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        .aboutme__inner {
+            gap: 12px;
+        }
+
+        .skills__inner__title {
+            font-size: 21px;
+            line-height: 20px;
+        }
+
+        .skills__inner {
+            gap: 10px;
+            padding: 12px 0;
+        }
+
+        .skills__inner__desc {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .skills__inner__block__items {
+            gap: 5px;
+        }
+
+        .skills__inner__block__items img {
+            max-width: 70px;
+            height: 70px;
+        }
+        .skills__inner__block__items__desc {
+            font-size: 12px;
+            line-height: 10px;
+        }
+        .portfolio__inner__block img {
+            width: 350px;
+        }
+        .portfolio__inner__block__link {
+            font-size: 12px;
+            line-height: 10px;
+        }
+
+        .portfolio__inner__block {
+            gap: 10px;
+        }
+        .portfolio__inner {
+            gap: 20px;
+        }
+
+        .contacts__inner__title {
+            font-size: 22px;
+            line-height: 20px;
+        }
+        .contacts__inner__desc {
+            font-size: 12px;
+            line-height: 14px;
+            max-width: 250px;
+        }
+
+        .contacts__inner {
+            gap: 10px;
+        }
+
+        .contacts__inner__btn {
+            width: 198.5px;
+            height: 29px;
+            font-size: 13px;
+            line-height: 10px;
+        }
+
+        .contacts__inner__link__btn img {
+            width: 30px;
+            height: 30px;
+        }
     }
 }

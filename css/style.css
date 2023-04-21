@@ -64,7 +64,6 @@ main {
   padding: 70px 0 0 0; }
   main .main {
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
     gap: 50px;
@@ -74,7 +73,8 @@ main {
       width: 100%;
       justify-content: space-between;
       align-items: flex-end;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      gap: 20px; }
       main .main__top__username {
         font-family: 'Gilroy-Bold';
         font-size: 47.3392px;
@@ -86,19 +86,32 @@ main {
         line-height: 22px;
         max-width: 170px; }
       main .main__top__lang {
-        transform: rotate(-90deg); }
+        background-color: #2F4F4F;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        border-radius: 30px;
+        color: white; }
         main .main__top__lang .active {
-          color: #070707;
-          text-decoration: underline; }
+          color: white;
+          background-color: #778899; }
         main .main__top__lang a {
           text-decoration: none;
-          color: #060000; }
+          color: #070707;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
     main .main__bottom {
       display: flex;
       justify-content: center; }
       main .main__bottom img {
         max-width: 1010px;
-        width: 100%; }
+        width: 100%;
+        border-radius: 40px; }
 
 .aboutme {
   display: flex;
@@ -191,8 +204,8 @@ main {
       flex-direction: column;
       gap: 30px;
       align-items: center; }
-      .portfolio__inner__block__img {
-        width: 500px;
+      .portfolio__inner__block img {
+        max-width: 500px;
         border-radius: 20px; }
       .portfolio__inner__block__link {
         font-family: 'Gilroy-Medium';

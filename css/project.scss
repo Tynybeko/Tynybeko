@@ -86,7 +86,7 @@ main {
 
     .main {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         align-items: center;
         width: 100%;
         gap: 50px;
@@ -98,6 +98,7 @@ main {
             justify-content: space-between;
             align-items: flex-end;
             flex-wrap: wrap;
+            gap: 20px;
 
             &__username {
                 font-family: 'Gilroy-Bold';
@@ -114,16 +115,29 @@ main {
             }
 
             &__lang {
-                transform: rotate(-90deg);
-
+                background-color: #2F4F4F;
+                padding:5px 10px;
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                border-radius: 30px;
+                color: white;
                 .active {
-                    color: #070707;
-                    text-decoration: underline;
+                    color: white;
+                    background-color: #778899;
+
                 }
 
                 a {
                     text-decoration: none;
-                    color: #060000;
+                    color: #070707;
+                    border-radius: 50%;
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
                 }
             }
         }
@@ -135,6 +149,8 @@ main {
             img {
                 max-width: 1010px;
                 width: 100%;
+            border-radius: 40px;
+
             }
         }
     }
@@ -260,8 +276,8 @@ main {
             gap: 30px;
             align-items: center;
 
-            &__img {
-                width: 500px;
+            img {
+                max-width: 500px;
                 border-radius: 20px;
             }
 
